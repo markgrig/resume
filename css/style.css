@@ -116,5 +116,11 @@ h2, h3 {
         white-space: pre;  
     }
 
+    .list-sourse a:nth-child(4):hover:before  {
+        color: green;
+        font-weight:900 ;
+        content: "Номер телефона был \A скопираван в буфер обмена!";
+        white-space: pre;                     
+    }
 }
    
