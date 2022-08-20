@@ -25,6 +25,7 @@ h2, h3 {
 .card div:nth-child(odd) {
     font-size: 16px;
 }
+
 .flex-card {
     display:  flex;
     justify-content: center; 
@@ -47,10 +48,80 @@ h2, h3 {
     cursor:pointer;      
 }
 
-@media (max-width: 700px) {
-    .list-sourse {
-        display: block;
-        text-align: center;  
+.list-sourse a:nth-child(4)::before  {
+    content: "Мой номер телефона: \A  +7-(913)-765-93-01";
+    white-space: pre; 
+       
+}
+
+.list-sourse a:nth-child(4):hover:before  {
+    content: "Сохранить в буфер \A  +7-(913)-765-93-01";
+    white-space: pre;     
+}
+
+.list-sourse a:nth-child(4):active:before  {
+    color: green;
+    font-weight:900 ;
+    content: "Номер телефона был \A скопираван в буфер обмена!";
+    white-space: pre;         
+    
+}
+
+
+
+@media (max-width: 850px) {
+    
+    .list-sourse{
+        flex-direction: column;
+        text-align: center;
     }
+
+    .list-sourse a:nth-child(1)::before {
+        color: black;
+        font-weight: 400 ;
+        content: "1)";
+        font-size: 18px;
+    }
+
+    .list-sourse a:nth-child(1)::after {
+        color: rgb(78, 74, 74);
+        font-weight: 400 ;
+        font-size: 16px;
+        font-style: oblique 15deg;
+        content: "( Проекты, задачи ) ";
+    }
+
+    .list-sourse a:nth-child(2)::before {
+        color: black;
+        font-weight: 400 ;
+        content: "2)";
+        font-size: 18px;
+    }
+
+    .list-sourse a:nth-child(2)::after {
+        color: rgb(78, 74, 74);
+        font-weight: 400 ;
+        font-size: 16px;
+        font-style: oblique 15deg;
+        content: "( Приоритетный месседжер ) ";
+    }
+
+
+    .list-sourse a:nth-child(3)::before {
+        color: black;
+        font-weight: 400 ;
+        content: "3)";
+        font-size: 18px;
+    }
+
+    .list-sourse a:nth-child(3)::after {
+        color: rgb(78, 74, 74);
+        font-weight: 400 ;
+        font-size: 16px;
+        font-style: oblique 15deg;
+        content: "( Возможный месседжер ) ";
+    }
+    
+   
 }
    
