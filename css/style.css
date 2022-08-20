@@ -72,6 +72,7 @@ h2, h3 {
 @media (max-width: 850px) {
     
     .list-sourse{
+        
         flex-direction: column;
         text-align: center;
     }
@@ -83,29 +84,12 @@ h2, h3 {
         font-size: 18px;
     }
 
-    .list-sourse a:nth-child(1)::after {
-        color: rgb(78, 74, 74);
-        font-weight: 400 ;
-        font-size: 16px;
-        font-style: oblique 15deg;
-        content: "(Проекты) ";
-    }
-
     .list-sourse a:nth-child(2)::before {
         color: black;
         font-weight: 400 ;
         content: "2)";
         font-size: 18px;
     }
-
-    .list-sourse a:nth-child(2)::after {
-        color: rgb(78, 74, 74);
-        font-weight: 400 ;
-        font-size: 16px;
-        font-style: oblique 15deg;
-        content: "(В приоритете) ";
-    }
-
 
     .list-sourse a:nth-child(3)::before {
         color: black;
@@ -114,14 +98,23 @@ h2, h3 {
         font-size: 18px;
     }
 
-    .list-sourse a:nth-child(3)::after {
+    .list-sourse a:nth-child(1)::after {
         color: rgb(78, 74, 74);
         font-weight: 400 ;
         font-size: 16px;
         font-style: oblique 15deg;
-        content: "(Не в приоритете) ";
+        content: " \A (Проекты, задания) ";
+        white-space: pre;  
     }
-    
-   
+
+    .list-sourse a:nth-child(2)::after {
+        color: rgb(78, 74, 74);
+        font-weight: 400 ;
+        font-size: 16px;
+        font-style: oblique 15deg;
+        content: " \A (В приоритете) ";
+        white-space: pre;  
+    }
+
 }
    
