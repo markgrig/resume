@@ -88,7 +88,7 @@ h2, h3 {
         font-weight: 400 ;
         font-size: 16px;
         font-style: oblique 15deg;
-        content: "( Проекты, задачи ) ";
+        content: "(Проекты) ";
     }
 
     .list-sourse a:nth-child(2)::before {
@@ -103,7 +103,7 @@ h2, h3 {
         font-weight: 400 ;
         font-size: 16px;
         font-style: oblique 15deg;
-        content: "( Приоритетный месседжер ) ";
+        content: "(В приоритете) ";
     }
 
 
@@ -119,7 +119,7 @@ h2, h3 {
         font-weight: 400 ;
         font-size: 16px;
         font-style: oblique 15deg;
-        content: "( Возможный месседжер ) ";
+        content: "(Не в приоритете) ";
     }
     
    
