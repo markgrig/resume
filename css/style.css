@@ -1,20 +1,42 @@
 h2, h3 {
     display: block;
     text-align: center;
-    color: rgba(0, 0, 0, 0.685);   
-    font-variant: small-caps ;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    width: 400px;
+    border-radius: 100px 100px 00px 0px;
+    background-color: rgba(56, 58, 49, 0.5);   
+    box-sizing: border-box;
+    border: solid  rgba(13, 13, 13, 0.627)
+}
+
+body {
+    background-image: url(../pictures/background.jpg);
+    background-position: 50% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .ava { 
     height:250px; 
     border-radius: 50px 50px 50px 50px;
     box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 1)
+    
 }
 
 .card {
-    background: rgba(7, 134, 252, 0.226); 
+    background: rgba(198, 198, 204, 0.5); 
     border-radius: 20px 20px 20px 20px;
-    padding: 10px;
+    border: solid  rgba(122, 137, 220, 0.8); 
+    padding: 20px;
+    flex: block;
+    margin: auto;
+    width: 75%;
+    box-sizing: border-box;
+    border: solid  rgba(240, 241, 246, 0.894)
 }
 .card div:nth-child(even) {
     font-size: 14px;
@@ -36,39 +58,79 @@ h2, h3 {
 
 .list-sourse a{
     margin-right: 14%;
-    color: blue;
+    padding: 4px;
+    color:  rgba(0, 0, 255, 0.9);
+    vertical-align:bottom;
     font-weight: 500;
     text-decoration: none;
 }
 
 .list-sourse a:hover  {
-    color: red;
+    color: white;
     font-weight: 900;
     cursor:pointer;      
 }
 
-.list-sourse a:nth-child(4)::before  {
+.list-sourse-placholder .number::before  {
     content: "Мой номер телефона: \A  +7-(913)-765-93-01";
     white-space: pre; 
        
 }
 
-.list-sourse a:nth-child(4):hover:before  {
+.list-sourse-placholder .number:hover:before  {
     content: "Сохранить в буфер \A  +7-(913)-765-93-01";
     white-space: pre;     
 }
 
-.list-sourse a:nth-child(4):active:before  {
-    color: green;
+.list-sourse-placholder .number:active:before  {
+    color: rgba(16, 255, 16, 0.499);
     font-weight:900 ;
-    content: "Номер скопираван \A в буфер обмена!";
+    content: "Номер скопираван \A в буфер устройства!";
     white-space: pre;         
     
 }
 
+.list-sourse a:nth-child(1)::before {
+    color: rgb(251, 253, 252);
+    font-weight: 400 ;
+    content: "1";
+    font-size: 18px;
+}
+
+.list-sourse a:nth-child(n):hover:before {
+    color: rgb(251, 253, 252);
+    font-weight: 400 ;
+    color: rgb(251, 253, 252);
+    font-weight: 400 ;
+    background-color: rgba(12, 11, 11, 0.319);
+    padding: 1px 7px 1px  6px;
+    border: solid 3px rgba(132, 15, 15, 0.9);
+    border-radius: 20px 20px 20px 20px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+
+.list-sourse a:nth-child(2)::before {
+    color: rgb(251, 253, 252);
+    font-weight: 400 ;
+    content: "2";
+    font-size: 18px;
+}
+
+.list-sourse a:nth-child(3)::before {
+    color: rgb(251, 253, 252);
+    font-weight: 400 ;
+    content: "3";
+    font-size: 18px;
+}
+
+
 /* mobile */
 @media (max-width: 850px) {
-    
+    .card {
+    width: 90%;
+    }
     .list-sourse{
         
         flex-direction: column;
@@ -76,29 +138,8 @@ h2, h3 {
         text-align: center;
     }
 
-    .list-sourse a:nth-child(1)::before {
-        color: black;
-        font-weight: 400 ;
-        content: "1)";
-        font-size: 18px;
-    }
-
-    .list-sourse a:nth-child(2)::before {
-        color: black;
-        font-weight: 400 ;
-        content: "2)";
-        font-size: 18px;
-    }
-
-    .list-sourse a:nth-child(3)::before {
-        color: black;
-        font-weight: 400 ;
-        content: "3)";
-        font-size: 18px;
-    }
-
-    .list-sourse a:nth-child(1)::after {
-        color: rgb(78, 74, 74);
+    .list-sourse-placholder a:nth-child(1)::after {
+        color: rgb(6, 6, 6);
         font-weight: 400 ;
         font-size: 16px;
         font-style: oblique 15deg;
@@ -106,8 +147,8 @@ h2, h3 {
         white-space: pre;  
     }
 
-    .list-sourse a:nth-child(2)::after {
-        color: rgb(78, 74, 74);
+    .list-sourse-placholder a:nth-child(2)::after {
+        color: rgb(6, 6, 6);
         font-weight: 400 ;
         font-size: 16px;
         font-style: oblique 15deg;
@@ -115,8 +156,8 @@ h2, h3 {
         white-space: pre;  
     }
 
-    .list-sourse a:nth-child(4):hover:before  {
-        color: green;
+    .list-sourse-placholder .number:hover:before  {
+        color: rgba(16, 255, 16, 0.499);
         font-weight:900 ;
         content: "Номер скопираван \A в буфер обмена!";
         white-space: pre;                     
