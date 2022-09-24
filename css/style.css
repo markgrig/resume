@@ -15,7 +15,6 @@ h2, h3 {
 body {
     background-image: url(../pictures/background.jpg);
     background-position: 50% 0%;
-    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
