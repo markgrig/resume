@@ -21,7 +21,7 @@ body {
 }
 
 .ava { 
-    height:250px; 
+    height: 250px; 
     border-radius: 50px 50px 50px 50px;
     box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 1)
     
@@ -31,7 +31,7 @@ body {
     background: rgba(198, 198, 204, 0.5); 
     border-radius: 20px 20px 20px 20px;
     border: solid  rgba(122, 137, 220, 0.8); 
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     flex: block;
     margin: auto;
     width: 80%;
@@ -142,6 +142,9 @@ body {
       
    }
 
+   h2 , h3 {
+    width: 70%;
+   }
     .list-sourse-placholder a:nth-child(1)::after {
         color: rgb(6, 6, 6);
         font-weight: 400 ;
