@@ -21,13 +21,10 @@ body {
 }
 
 .ava { 
-<<<<<<< HEAD
     height: 250px; 
     border-radius: 50px 50px 50px 50px;
-=======
     height:150px; 
     border-radius: 30px 30px 30px 30px;
->>>>>>> 8022532f2894b41425edc0a8a6e29686e4717c62
     box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 1)
     
 }
