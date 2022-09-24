@@ -129,6 +129,10 @@ body {
 
 /* mobile */
 @media (max-width: 850px) {
+    body{
+        background-size: auto;
+        background-attachment: scroll;
+    }
     .card {
     width: 90%;
     }
