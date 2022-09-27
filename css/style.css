@@ -133,6 +133,7 @@ body {
 @media (max-width: 850px) {
     body{
         background-size: auto 100%;
+        background-size: 425%;
         background-attachment: scroll;
     }
     .card {
