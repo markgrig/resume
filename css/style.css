@@ -60,9 +60,10 @@ body {
    list-style-type: none;
 }
 
-.list-sourse a{
+.list-sourse a, .number {
     width: 70%;
     color:  rgba(0, 0, 255, 0.9);
+    background-color: rgba(137, 43, 226, 0);
     vertical-align:bottom;
     font-weight: 500;
     text-decoration: none;
@@ -74,24 +75,75 @@ body {
     cursor:pointer;      
 }
 
-.list-sourse-placholder .number::before  {
+.list-sourse .number {
+    height: 45px;
+    border-radius: 10px;
+    width: 180px;
+    border: solid  0.5px white;
+    background-color: rgba(37, 241, 248, 0.1);
+}
+
+.list-sourse .number  {
+    box-shadow:  0px 0px 10px rgb(239, 239, 245) ;;
+    transition: 2s;
+}
+.list-sourse .number::before  {
     content: "Мой номер телефона: \A  +7-(913)-765-93-01";
-    white-space: pre; 
-       
+    white-space: pre;
+    font-size: 105%;
+    transition:0.5s;
 }
 
-.list-sourse-placholder .number:hover:before  {
+.list-sourse .number:hover  {
+    box-shadow: 1px 1px 10px rgba(6, 6, 216, 1) ;
+    transition: 0.8s;
+}
+
+.list-sourse .number:hover:before  {
+    font-size: 115%;
+    color: white;
+    cursor: copy; 
     content: "Сохранить в буфер \A  +7-(913)-765-93-01";
-    white-space: pre;     
+    white-space: pre; 
+    transition: 1.6s;
+
 }
 
-.list-sourse-placholder .number:active:before  {
-    color: rgba(16, 255, 16, 0.499);
-    font-weight:900 ;
-    content: "Номер скопираван \A в буфер устройства!";
-    white-space: pre;         
-    
-}
+.list-sourse .number:focus:before {
+        color: rgb(11, 243, 11);
+        content: "Номер скопираван \A в буфер устройства!";
+        white-space: pre;
+        opacity: 1;
+        -webkit-animation: flash 2s;
+        animation: flash 2s; 
+    }
+.list-sourse .number:focus {
+     box-shadow: 0px 0px 10px rgb(21, 247, 0) ;
+    opacity: 1;
+    -webkit-animation: flash 2s;
+    animation: flash 2s; 
+}      
+
+
+
+
+  @-webkit-keyframes flash {
+    0% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    }
+  }
+  @keyframes flash {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+  }
+
 
 .list-sourse a:nth-child(1)::before {
     color: rgb(251, 253, 252);
@@ -100,20 +152,20 @@ body {
     font-size: 18px;
 }
 
-.list-sourse a:nth-child(n):hover:before {
+.list-sourse a:nth-child(n):hover:before,
+.list-sourse a:nth-child(n):focus:before  {
     color: rgb(251, 253, 252);
-    font-weight: 400 ;
-    color: rgb(251, 253, 252);
+    font-weight: 400 ;  
     font-weight: 400 ;
     background-color: rgba(12, 11, 11, 0.319);
     padding: 1px 6px 1px  6px;
     border: solid 3px rgba(132, 15, 15, 0.9);
     border-radius: 20px 20px 20px 20px;
     font-size: 18px;
+}
+.list-sourse a:nth-child(n):hover:before {
     transition: 0.15s;
 }
-
-
 .list-sourse a:nth-child(2)::before {
     color: rgb(251, 253, 252);
     font-weight: 400 ;
@@ -172,10 +224,12 @@ body {
     }
 
     .list-sourse-placholder .number:hover:before  {
-        color: rgba(16, 255, 16, 0.499);
-        font-weight:900 ;
-        content: "Номер скопираван \A в буфер обмена!";
-        white-space: pre;                     
+        content: "Номер скопираван \A в буфер обмена!";                   
     }
+
+    .list-sourse-placholder .number  {
+        margin-bottom: -20px;                   
+    }
+    
 }
    
