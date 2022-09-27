@@ -223,6 +223,11 @@ body {
         white-space: pre;  
     }
 
+    .list-sourse-placholder a:nth-child(3)::after {
+        font-size: 16px;
+        content: " \A  ";
+        white-space: pre;  
+    }
     .list-sourse-placholder .number:hover:before  {
         color: rgb(21, 247, 0) ; 
         content: "Номер скопираван \A в буфер обмена!";                   
