@@ -16,6 +16,8 @@ body {
     background-image: url(../pictures/background.jpg);
     background-position: 50% 0%;
     background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     background-attachment: fixed;
 }
 
@@ -130,7 +132,7 @@ body {
 /* mobile */
 @media (max-width: 850px) {
     body{
-        background-size: 410%;
+        background-size: auto 100%;
         background-attachment: scroll;
     }
     .card {
