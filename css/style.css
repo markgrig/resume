@@ -19,6 +19,8 @@ body {
     background-size: cover;
     width: 100%;
     background-attachment: fixed;
+
+    background-color: rgb(22, 129, 190);
 }
 
 .ava { 
@@ -61,7 +63,8 @@ body {
 }
 
 .list-sourse a, .number {
-    width: 70%;
+    width: max-content;
+    margin: 0 5%;
     color:  rgba(0, 0, 255, 0.9);
     background-color: rgba(137, 43, 226, 0);
     vertical-align:bottom;
@@ -184,8 +187,8 @@ body {
 /* mobile */
 @media (max-width: 850px) {
     body{
-        background-size: auto 100%;
-        background-size: 425%;
+        background-size: 0 100%;
+        background-size: 500%;
         background-attachment: scroll;
     }
     .card {
